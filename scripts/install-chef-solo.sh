@@ -13,3 +13,7 @@ sudo apt-get update
 
 # Install opscode-keyring to keep keyring up to date
 sudo apt-get install opscode-keyring # permanent upgradeable keyring
+
+# Upgrade
+
+sudo apt-get upgrade

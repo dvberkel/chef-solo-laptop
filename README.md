@@ -53,8 +53,9 @@ Chef Solo need to be installed to run the various cookbooks and
 recipies. Detailed information can be found on the
 [installation page](http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Ubuntu+or+Debian "Installing Chef Solo Documentation")
 at Opscode. We will list the commands that need to be executed. These
-commands are captured into the `scripts/chef-solo.sh` script. This
-script can be executed instead of running the commands below.
+commands are captured into the 
+[scripts/chef-solo.sh][https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/install-chef-solo.sh]
+script. This script can be executed instead of running the commands below.
 
 We are using the Opscode APT repository. This way it is easy to keep
 Chef up to date. Execute the following command to add the Opscode APT
@@ -76,6 +77,10 @@ And install `opscode-keyring` to keep the keyring up to date.
 
     sudo apt-get install opscode-keyring # permanent upgradeable keyring
 
+To ensure we use the latest libraries that Chef depends on we have to
+upgrade the installation.
+
+    sudo apt-get upgrade
 
 ### Summary
 
