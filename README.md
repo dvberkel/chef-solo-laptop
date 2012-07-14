@@ -115,3 +115,16 @@ This will execute the recipe in
 The above command can be executed with the
 [scripts/provision.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/provision.sh)
 script.
+
+Basic Setup
+-----------
+
+The basic setup for the computer is described in the `basic-setup`
+cookbook, in particular in the 
+[default](https://github.com/dvberkel/chef-solo-laptop/blob/master/cookbooks/basic-setup/recipes/default.rb)
+recipe.
+
+The documentation about
+[resources](http://wiki.opscode.com/display/chef/Resources "Opscode documentation about resources")
+is a good place to start understanding the syntax of various elements
+in the recipes.
