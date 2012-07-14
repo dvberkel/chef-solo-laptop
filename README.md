@@ -37,8 +37,35 @@ Execute the command below to install [git](http://git-scm.com/ "Homepage of git"
 Git is used to retrieve this repository which contains all the utility
 scripts, cookbooks and recipies needed to get started.
 
+### Clone Repository
+
+Choose an appropriate directory in which to clone this repository. In
+that directory execute the following command
+
+    git clone git://github.com/dvberkel/chef-solo-laptop.git
+
+This will clone the repository into a directory called
+`chef-solo-laptop`.
+
+### Install Chef Solo
+
+Chef Solo need to be installed to run the various cookbooks and
+recipies. Detailed information can be found on the
+[installation page](http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Ubuntu+or+Debian "Installing Chef Solo Documentation")
+at Opscode. We will list the commands that need to be executed. These
+commands are captured into the `scripts/chef-solo.sh` script. This
+script can be executed instead of running the commands below.
+
+We are using the Opscode APT repository. This way it is easy to keep
+Chef up to date. Execute the following command to add the Opscode APT
+to the source list.
+
+    echo "deb http://apt.opscode.com/ `lsb_release -cs`-0.10 main" | sudo tee /etc/apt/sources.list.d/opscode.list
+
 
 ### Summary
 
 * Ubuntu (12.04)
 * Git
+* Clone Repository
+* Install Chef Solo
