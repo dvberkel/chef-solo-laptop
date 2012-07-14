@@ -51,7 +51,7 @@ This will clone the repository into a directory called
 `chef-solo-laptop`.
 
 The command above can be found in the script
-[scripts/install-git.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/clone-repository.sh)
+[scripts/clone-repository.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/clone-repository.sh)
 
 ### Install Chef Solo
 
@@ -60,7 +60,7 @@ recipies. Detailed information can be found on the
 [installation page](http://wiki.opscode.com/display/chef/Installing+Chef+Client+on+Ubuntu+or+Debian "Installing Chef Solo Documentation")
 at Opscode. We will list the commands that need to be executed. These
 commands are captured into the 
-[scripts/chef-solo.sh][https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/install-chef-solo.sh]
+[scripts/chef-solo.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/install-chef-solo.sh)
 script. This script can be executed instead of running the commands below.
 
 We are using the Opscode APT repository. This way it is easy to keep
