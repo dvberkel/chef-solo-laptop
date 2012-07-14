@@ -95,9 +95,25 @@ Finally install chef via apt-get.
 Because we are only intend to run Chef Solo the Chef Server Url can be
 set to 'none'. (The install script has these values preseeded.)
 
+### Run Chef Solo
+
+Now that Chef Solo is installed we should use it. Execute the
+following command to provision your laptap.
+
+    chef-solo -c solo.rb -j solo.json
+
+This will execute the recipe in
+`cookbooks/basic-setup/recipes/default.rb`
+
+The above command can be executed with the
+[scripts/provision.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/provision.sh)
+script.
+
+
 ### Summary
 
 * Ubuntu (12.04)
 * Git
 * Clone Repository
 * Install Chef Solo
+* Run Chef Solo
