@@ -18,8 +18,15 @@ Procedure
 ---------
 
 In this section the procedure for getting the provision of a laptop up
-and running is described here. The assumptions made are summarized in
-a list at the end of the procedure.
+and running is described here. A summary is given below.
+
+### Summary
+
+* Ubuntu (12.04)
+* Git
+* Clone Repository
+* Install Chef Solo
+* Run Chef Solo
 
 ### Ubuntu
 
@@ -108,12 +115,3 @@ This will execute the recipe in
 The above command can be executed with the
 [scripts/provision.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/provision.sh)
 script.
-
-
-### Summary
-
-* Ubuntu (12.04)
-* Git
-* Clone Repository
-* Install Chef Solo
-* Run Chef Solo
