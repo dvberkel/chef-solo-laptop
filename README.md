@@ -64,9 +64,17 @@ to the source list.
 
 The next step is adding the OpsCode GPG key so the downloads can be verified.
 
-sudo mkdir -p /etc/apt/trusted.gpg.d
-gpg --keyserver keys.gnupg.net --recv-keys 83EF826A
-gpg --export packages@opscode.com | sudo tee /etc/apt/trusted.gpg.d/opscode-keyring.gpg > /dev/null
+    sudo mkdir -p /etc/apt/trusted.gpg.d
+    gpg --keyserver keys.gnupg.net --recv-keys 83EF826A
+    gpg --export packages@opscode.com | sudo tee /etc/apt/trusted.gpg.d/opscode-keyring.gpg > /dev/null
+
+Update the index with the following command
+
+    sudo apt-get update
+
+And install `opscode-keyring` to keep the keyring up to date.
+
+    sudo apt-get install opscode-keyring # permanent upgradeable keyring
 
 
 ### Summary

@@ -8,3 +8,8 @@ sudo mkdir -p /etc/apt/trusted.gpg.d
 gpg --keyserver keys.gnupg.net --recv-keys 83EF826A
 gpg --export packages@opscode.com | sudo tee /etc/apt/trusted.gpg.d/opscode-keyring.gpg > /dev/null
 
+# Update
+sudo apt-get update
+
+# Install opscode-keyring to keep keyring up to date
+sudo apt-get install opscode-keyring # permanent upgradeable keyring
