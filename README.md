@@ -28,3 +28,17 @@ Install the latest version of
 procudure was described the latest version was Ubuntu 12.04 LTS
 Precise Pangolin.
 
+### Git
+
+Execute the command below to install [git](http://git-scm.com/ "Homepage of git").
+
+    sudo apt-get install git
+
+Git is used to retrieve this repository which contains all the utility
+scripts, cookbooks and recipies needed to get started.
+
+
+### Summary
+
+* Ubuntu (12.04)
+* Git
