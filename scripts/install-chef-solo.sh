@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+ORGNAME=effrafax
+
 # Add Opscode APT to the source list
 echo "deb http://apt.opscode.com/ `lsb_release -cs`-0.10 main" | sudo tee /etc/apt/sources.list.d/opscode.list
 
@@ -15,5 +17,7 @@ sudo apt-get update
 sudo apt-get install opscode-keyring # permanent upgradeable keyring
 
 # Upgrade
-
 sudo apt-get upgrade
+
+# Install Chef
+echo "chef chef/none string https://api.opscode.com/organizations/$ORGNAME" | sudo debconf-set-selections && sudo apt-get install chef -y

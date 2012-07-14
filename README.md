@@ -82,6 +82,13 @@ upgrade the installation.
 
     sudo apt-get upgrade
 
+Finally install chef via apt-get.
+
+    sudo apt-get install chef
+
+Because we are only intend to run Chef Solo the Chef Server Url can be
+set to 'none'. (The install script has these values preseeded.)
+
 ### Summary
 
 * Ubuntu (12.04)
