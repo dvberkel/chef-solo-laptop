@@ -7,7 +7,7 @@ of my laptop.
 Chef
 ----
 
-[Chef][http://www.opscode.com/chef/ "Chef homepage"] provides a means
+[Chef](http://www.opscode.com/chef/ "Chef homepage") provides a means
 to provision a (cluster of) machine.
 
 Because we do not want to depend on a chef-server we opt to use the
