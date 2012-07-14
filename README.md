@@ -37,6 +37,9 @@ Execute the command below to install [git](http://git-scm.com/ "Homepage of git"
 Git is used to retrieve this repository which contains all the utility
 scripts, cookbooks and recipies needed to get started.
 
+The above step is captured into 
+[scripts/install-git.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/install-git.sh)
+
 ### Clone Repository
 
 Choose an appropriate directory in which to clone this repository. In
@@ -46,6 +49,9 @@ that directory execute the following command
 
 This will clone the repository into a directory called
 `chef-solo-laptop`.
+
+The command above can be found in the script
+[scripts/install-git.sh](https://github.com/dvberkel/chef-solo-laptop/blob/master/scripts/clone-repository.sh)
 
 ### Install Chef Solo
 
