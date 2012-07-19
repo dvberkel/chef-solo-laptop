@@ -1,8 +1,8 @@
 # The basic setup for a computer
 
-execute "update sources" do
-  command "apt-get update -y"
-end
+#execute "update sources" do
+#  command "apt-get update -y"
+#end
 
 # all package to install
 
@@ -12,7 +12,7 @@ end
 #   package a_package
 # end
 
-package 'mercurial' do
+package 'subversion' do
   action :install
   options "--force-yes"
 end
