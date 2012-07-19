@@ -5,14 +5,8 @@
 #end
 
 # all package to install
+packages = %w{bzr mercurial subversion}
 
-# packages = %w{bzr}
-
-# packages.each do |a_package|
-#   package a_package
-# end
-
-package 'subversion' do
-  action :install
-  options "--force-yes"
+packages.each do |a_package|
+  package a_package
 end
