@@ -6,7 +6,8 @@
 
 # all package to install
 vcss = %w{bzr mercurial subversion}
-packages = [ vcss ]
+languages = %w{ghc6 swi-prolog}
+packages = [ vcss, languages ]
 
 packages.flatten.each do |a_package|
   package a_package
