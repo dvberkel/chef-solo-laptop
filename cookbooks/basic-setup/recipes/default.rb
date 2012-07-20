@@ -5,8 +5,9 @@
 #end
 
 # all package to install
-packages = %w{bzr mercurial subversion}
+vcss = %w{bzr mercurial subversion}
+packages = [ vcss ]
 
-packages.each do |a_package|
+packages.flatten.each do |a_package|
   package a_package
 end
