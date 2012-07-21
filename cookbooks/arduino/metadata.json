@@ -1,0 +1,30 @@
+{
+  "name": "arduino",
+  "description": "Installs and configures Arduino IDE.",
+  "long_description": "",
+  "maintainer": "Daan van Berkel",
+  "maintainer_email": "daan.v.berkel.1980@gmail.com",
+  "license": "MIT",
+  "platforms": {
+  },
+  "dependencies": {
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "arduino": "Install arduino in home directory",
+  },
+  "version": "0.0.1"
+}
