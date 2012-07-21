@@ -37,3 +37,10 @@ execute "tar" do
   creates installation_dir + "#{version}"
   action :run
 end
+
+# Add user to the dialout group
+group "dialout" do
+  action :modify
+  members "dvberkel"
+  append true
+end
