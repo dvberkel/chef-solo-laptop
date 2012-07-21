@@ -15,4 +15,9 @@ packages.flatten.each do |a_package|
   package a_package
 end
 
-include_recipe "rvm"
+# all recipes to include
+recipes = %w{rvm}
+
+recipes.each do |a_recipe|
+  include_recipe a_recipe
+end
