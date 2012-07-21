@@ -7,40 +7,43 @@
   package a_package
 end
 
-# Make sure the installation directory exist
-directory "/home/dvberkel/bin" do
-  owner "dvberkel"
-  group "dvberkel"
-  action :create
-end
-
-version = "arduino-1.0.1"
+version = node[:arduino][:version]
 tarball = "#{version}-linux.tgz"
 
 # Download Arduino IDE
 execute "wget" do
-  tarball_url = "https://arduino.googlecode.com/files/#{tarball}"
+  tarball_url = "#{node[:arduino][:download_url]}/#{tarball}"
   cwd "/tmp"
   command "wget --output-document='#{tarball}' '#{tarball_url}'"
   creates "/tmp/#{tarball}"
   action :run
 end
 
-# Extract Arduino IDE
-execute "tar" do
-  user "dvberkel"
-  group "dvberkel"
+node[:arduino][:users].each do |user|
+  installation_dir = "/home/#{user}/#{node[:arduino][:relative_install_dir]}"
 
-  installation_dir = "/home/dvberkel/bin"
-  cwd installation_dir
-  command "tar zxf /tmp/#{tarball}"
-  creates installation_dir + "#{version}"
-  action :run
-end
+  # Make sure the installation directory exist
+  directory installation_dir do
+    owner user
+    group user
+    action :create
+  end
 
-# Add user to the dialout group
-group "dialout" do
-  action :modify
-  members "dvberkel"
-  append true
+  # Extract Arduino IDE
+  execute "tar" do
+    user user
+    group user
+
+    cwd installation_dir
+    command "tar zxf /tmp/#{tarball}"
+    creates installation_dir + "#{version}"
+    action :run
+  end
+
+  # Add user to the dialout group
+  group "dialout" do
+    action :modify
+    members user
+    append true
+  end
 end
