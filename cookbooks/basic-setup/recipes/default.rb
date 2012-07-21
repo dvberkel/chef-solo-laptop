@@ -14,3 +14,5 @@ packages = [ vcss, mathematics, languages, java ]
 packages.flatten.each do |a_package|
   package a_package
 end
+
+include_recipe "rvm"
