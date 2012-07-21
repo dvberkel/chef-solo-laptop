@@ -16,7 +16,7 @@ packages.flatten.each do |a_package|
 end
 
 # all recipes to include
-recipes = %w{rvm}
+recipes = %w{rvm nodejs nodejs::npm}
 
 recipes.each do |a_recipe|
   include_recipe a_recipe
