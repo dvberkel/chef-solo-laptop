@@ -1,0 +1,6 @@
+Things to do
+============
+
+* TODO create .bash_path
+* TODO source .bash_path at the end of /etc/bash.bashrc
+* TODO source /etc/profile.d/rvm.sh at the end of /etc/bash.bashrc
