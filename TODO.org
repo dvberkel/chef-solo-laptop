@@ -6,4 +6,4 @@ Things to do
 * TODO source /etc/profile.d/rvm.sh at the end of /etc/bash.bashrc
 * TODO install postgres
 * TODO install mysql
-* TODO install maven
+* DONE install maven

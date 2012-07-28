@@ -8,7 +8,7 @@
 vcss = %w{bzr mercurial subversion}
 mathematics = %w{texlive-full geogebra genius coqide}
 languages = %w{ghc6 swi-prolog ocaml erlang mit-scheme}
-java = %w{openjdk-6-jdk openjdk-6-doc openjdk-6-source openjdk-7-jdk openjdk-7-doc openjdk-7-source}
+java = %w{openjdk-6-jdk openjdk-6-doc openjdk-6-source openjdk-7-jdk openjdk-7-doc openjdk-7-source maven2}
 packages = [ vcss, mathematics, languages, java ]
 
 packages.flatten.each do |a_package|
