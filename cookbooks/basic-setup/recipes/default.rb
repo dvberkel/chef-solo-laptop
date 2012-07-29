@@ -16,9 +16,13 @@ packages.flatten.each do |a_package|
 end
 
 # all recipes to include
-recipes = %w{rvm nodejs nodejs::npm couchdb arduino}
+utils = %w{rvm}
+recent_languages = %w{nodejs nodejs::npm}
+databases = %w{couchdb}
+electronics = %w{arduino}
+recipes = [ utils, recent_languages, databases, electronics ]
 
-recipes.each do |a_recipe|
+recipes.flatten.each do |a_recipe|
   include_recipe a_recipe
 end
 
