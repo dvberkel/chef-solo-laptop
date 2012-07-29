@@ -18,7 +18,7 @@ end
 # all recipes to include
 utils = %w{rvm}
 recent_languages = %w{nodejs nodejs::npm}
-databases = %w{couchdb}
+databases = %w{couchdb mysql::server}
 electronics = %w{arduino}
 recipes = [ utils, recent_languages, databases, electronics ]
 
