@@ -9,7 +9,8 @@ vcss = %w{bzr mercurial subversion}
 mathematics = %w{texlive-full geogebra genius coqide}
 languages = %w{ghc6 swi-prolog ocaml erlang mit-scheme}
 java = %w{openjdk-6-jdk openjdk-6-doc openjdk-6-source openjdk-7-jdk openjdk-7-doc openjdk-7-source maven2}
-packages = [ vcss, mathematics, languages, java ]
+databases = %w{redis-server}
+packages = [ vcss, mathematics, languages, java, databases]
 
 packages.flatten.each do |a_package|
   package a_package
@@ -18,9 +19,9 @@ end
 # all recipes to include
 utils = %w{rvm}
 recent_languages = %w{nodejs nodejs::npm}
-databases = %w{couchdb mysql::server}
+recent_databases = %w{couchdb mysql::server}
 electronics = %w{arduino}
-recipes = [ utils, recent_languages, databases, electronics ]
+recipes = [ utils, recent_languages, recent_databases, electronics ]
 
 recipes.flatten.each do |a_recipe|
   include_recipe a_recipe
