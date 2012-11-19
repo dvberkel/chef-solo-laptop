@@ -18,10 +18,11 @@ end
 
 # all recipes to include
 utils = %w{rvm}
-recent_languages = %w{nodejs nodejs::npm leiningen}
+recent_languages = %w{nodejs nodejs::npm leiningen go}
 recent_databases = %w{couchdb mysql::server}
 electronics = %w{arduino}
-recipes = [ utils, recent_languages, recent_databases, electronics ]
+gurps = %w{gcs}
+recipes = [ utils, recent_languages, recent_databases, electronics, gurps ]
 
 recipes.flatten.each do |a_recipe|
   include_recipe a_recipe
