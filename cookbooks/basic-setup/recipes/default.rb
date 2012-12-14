@@ -17,7 +17,7 @@ packages.flatten.each do |a_package|
 end
 
 # all recipes to include
-utils = %w{rvm}
+utils = %w{rvm phantomjs}
 recent_languages = %w{nodejs nodejs::npm leiningen go}
 recent_databases = %w{couchdb mysql::server}
 electronics = %w{arduino}
