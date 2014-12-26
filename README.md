@@ -1,7 +1,7 @@
 Chef Solo Laptop
 ================
 
-This repository contains chef cookbooks and recipes for the provision
+This repository contains chef cookbooks and recipes for the provisioning
 of my laptop.
 
 Chef
@@ -18,7 +18,7 @@ Procedure
 ---------
 
 In this section the procedure for getting the provision of a laptop up
-and running is described here. A summary is given below.
+and running is described. A summary is given below.
 
 ### Summary
 
